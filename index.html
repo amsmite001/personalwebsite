@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Note: I stole most of this from myself - I had to learn Bootstrap for my Software Engineering Project (link is on the website), so  I just used that since I spent a long time on it.-->
+<!--I've spent too long on this too - I have showcase still .-. this is all you get for now!-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <title>Amanda's Website</title>
+</head>
+
+<!--Id is handy to use as an achor for a scroll point. It's a trick I use a lot in markdown.-->
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-lable="Toggle navigation"> Menu </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ml-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#exp">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#proj">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="index1.html">Classwork</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+          <div class="photo-container"><img src="img/2.jpg" alt="" height=100 w></div>
+            <h1 class="mx-auto  text-light text-uppercase">Amanda Smith</h1>
+            <h2 class="text-light mx-auto mt-2 mb-5">Software Engineer & Mathematician</div>
+      </div>
+    </div>
+  </header>
+
+<!--Js scroll triggers here for about-->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <img src="img/2.jpg" height=200>
+        </div>
+        <div class="col-lg-8">
+          <h2 class="text-white mb-4 text-center">“It’s not who I am underneath, but what I do that defines me"</h2>
+          <p class="text-white">Thanks to my experience I've found a new passion in data science. With my background in Computer Science, Mathematics, and Business, I'm able to learn quickly, and continiously evolve into a learning machine.</p>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="me.html">Tell Me More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="exp" class="exp-section">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Experience</h2>
+                <h3 class="section-subheading text-muted">Companies I've worked for</h3>
+            </div>
+            <div class="col-lg-5 text-right" target="_blank">
+              <a href="https://trace3.com">
+            <img src="img/trace.png" height=100></a>
+          </div>
+          <div class="col-lg-5 text-center">
+            <a href="http://glaciericearena.net/" target="_blank">
+              <img src="img/logo.png" height=100>
+              </a>
+            </div>
+        </div>
+      </div>
+  </section>
+
+  <section id="proj" class="projects-section bg-light">
+    <div class="container">
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/proj1.png" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Twitterbot</h4>
+                <p class="text-white-50 mb-0">Using tensorflow and the twitter API, meet the CMU-Trump twitterbot, emluating texts from the current president.</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/proj2.png" alt="">
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">JupyterBin</h4>
+                  <p class="mb-0 text-white-50">An extension of Jupyter Notebook made easier with an easily deployable online version. JAAS (Jupyter as a service)</p>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-primary btn-xl text-uppercase" href="projects.html">View More</a>
+        </div>
+      </div>
+  </section>
+
+  <section id="exp" class="language-section">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="row">
+        <div clas="col-lg-3">
+          <h1 class="mx-auto  text-light text-uppercase">Language</h1>
+          <h1 class="mx-auto  text-light text-uppercase">FrameWorks & Tools</h1>
+          <hr class="d-none d-lg-block mb-0 mr-0">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-light py-5">
+      <div class="container">
+        <div class="small text-center text-muted">:) Thanks for stopping by! Website is still a WIP - Student showcase has higher priority</div>
+      </div>
+  </footer>
+
+<!-------------------End body-------------------->
+<script src="js/jquery/jquery.min.js"></script>
+<script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-easing/jquery.easing.min.js"></script>a
+<script src="js/agency.js"></script>
+
+</body>
+</html>

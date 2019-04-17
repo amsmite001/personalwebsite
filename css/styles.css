@@ -38,7 +38,7 @@
 
   #mainNav .nav-link {
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.767);
   }
   #mainNav .nav-link:hover {
     color: rgb(0, 255, 247);
@@ -145,75 +145,69 @@
 .btn-primary:active {
   background-color: #467370 !important;
 }
-.team-member {
+.crcle {
   margin-bottom: 50px;
   text-align: center;
 }
 
-.team-member img {
+.crcle img {
   width: 225px;
   height: 225px;
   border: 7px solid #fff;
 }
 
 
-.about-section {
+.abs {
   padding-top: 8rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(75%, rgba(92, 92, 92, 0.9)), to(rgba(124, 124, 124, 0.8)));
+  background: linear-gradient(to bottom, black 0%, rgba(82, 82, 82, 0.9) 75%, rgba(180, 180, 180, 0.8) 100%);
 }
 
-.about-section p {
+.abs p {
   margin-bottom: 8rem;
 }
-.exp-section{
+
+.exps{
   margin: 15px 0;
   text-transform: none;
 }
-
-.exp-section h3{
+.exps h3{
   padding-bottom: 10vh;
 }
-.language-section{
+
+.languages{
   padding-top: 60vh;
   background-image: url("../img/bkg2.jpg");
   background-position: center;
    background-repeat: no-repeat;
    background-attachment: scroll;
    background-size: cover;
-
 }
-.language-section hr {
+.languages hr {
   border-color: black;
   border-width: .25rem;
   width: 30%;
 }
 
-.projects-section {
+.projects {
   padding: 10rem 0;
 }
-
-.projects-section .featured-text {
-  padding: 2rem;
+.projects .project-text {
+  padding: 3rem;
+  font-size: 90%;
 }
-
 @media (min-width: 992px) {
-  .projects-section .featured-text {
+  .projects .featured-text {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;
   }
 }
 
-.projects-section .project-text {
-  padding: 3rem;
-  font-size: 90%;
-}
-
 @media (min-width: 992px) {
-  .projects-section .project-text {
+  .projects .project-text {
     padding: 5rem;
   }
-  .projects-section .project-text hr {
+  .projects .project-text hr {
     border-color: #64a19d;
     border-width: .25rem;
     width: 30%;
@@ -227,7 +221,7 @@ body {
 }
 
 a {
-  color: #64a19d;
+  color: #0cf8e8;
 }
 
 a:focus, a:hover {
@@ -253,7 +247,6 @@ footer {
 
 #portfolio .container-fluid {
   max-width: 1920px;
-  
 }
 
 #portfolio .container-fluid .portfolio-box {
@@ -282,7 +275,6 @@ footer {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
   -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
   text-align: center;

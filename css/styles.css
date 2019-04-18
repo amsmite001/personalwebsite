@@ -1,4 +1,4 @@
- #mainNav {
+#mainNav {
   min-height: 56px;
   background-color: #fff;
 }
@@ -35,10 +35,13 @@
     -webkit-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
   }
-
+  #mainNav .navbar-brand {
+    padding: .5rem 0;
+    color: rgba(255, 255, 255, 0.767);
+  }
   #mainNav .nav-link {
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.767);
+    color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link:hover {
     color: rgb(0, 255, 247);
@@ -48,6 +51,7 @@
   }
   #mainNav.navbar-shrink {
     background-color: #fff;
+    ;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #161616;
@@ -71,16 +75,16 @@
 }
 
 .main {
-  background-image: url("../img/bkg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
   position: relative;
   width: 100%;
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
+  background-image: url("../img/bkg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 .main h1 {
@@ -166,15 +170,14 @@
 .abs p {
   margin-bottom: 8rem;
 }
-
 .exps{
   margin: 15px 0;
   text-transform: none;
 }
+
 .exps h3{
   padding-bottom: 10vh;
 }
-
 .languages{
   padding-top: 60vh;
   background-image: url("../img/bkg2.jpg");
@@ -182,6 +185,7 @@
    background-repeat: no-repeat;
    background-attachment: scroll;
    background-size: cover;
+
 }
 .languages hr {
   border-color: black;
@@ -189,31 +193,36 @@
   width: 30%;
 }
 
-.projects {
+.projects-section {
   padding: 10rem 0;
 }
-.projects .project-text {
-  padding: 3rem;
-  font-size: 90%;
+
+.projects-section .featured-text {
+  padding: 2rem;
 }
+
 @media (min-width: 992px) {
-  .projects .featured-text {
+  .projects-section .featured-text {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;
   }
 }
 
+.projects-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
 @media (min-width: 992px) {
-  .projects .project-text {
+  .projects-section .project-text {
     padding: 5rem;
   }
-  .projects .project-text hr {
+  .projects-section .project-text hr {
     border-color: #64a19d;
     border-width: .25rem;
     width: 30%;
   }
 }
-
 
 body {
   font-family: 'Nunito';
@@ -247,6 +256,7 @@ footer {
 
 #portfolio .container-fluid {
   max-width: 1920px;
+
 }
 
 #portfolio .container-fluid .portfolio-box {
@@ -278,4 +288,4 @@ footer {
   -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
   text-align: center;
-}
+} 

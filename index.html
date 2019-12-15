@@ -1,16 +1,17 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-<!--Note: I stole most of this from myself - I had to learn Bootstrap for my Software Engineering Project (link is on the website), so  I just used that since I spent a long time on it.-->
-<!--I've spent too long on this too - I have showcase still .-. this is all you get for now!-->
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <link href="css/styles.css" rel="stylesheet">
+  <link href="css/timelinestyle.css" rel="stylesheet">
+  <script src="js/main.js"></script>
   <title>Amanda's Website</title>
 </head>
 
-<!--Id is handy to use as an achor for a scroll point. It's a trick I use a lot in markdown.-->
+<!--onLoad="popup('autopopup.html', 'ad')"-->
 <body id="page-top">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
@@ -37,56 +38,126 @@
 
   <header class="main">
     <div class="container d-flex h-100 align-items-center">
-      <div class="mx-auto text-center">
-          <div class="photo-container"><img src="img/2.jpg" alt="" height=100 w></div>
-            <h1 class="mx-auto  text-light text-uppercase">Amanda Smith</h1>
-            <h2 class="text-light mx-auto mt-2 mb-5">Software Engineer & Mathematician</div>
-      </div>
-    </div>
+      <h2 class="mx-auto text-center">
+          <div class="row">
+              <div class="col-lg-12  text-center">
+                  <div class="photo-container"><img src="img/2.png" alt="" height=200 w></div></div>
+                  <div class="col-lg-12  text-center">
+                      <h1 class="mx-auto  text-light text-uppercase">Amanda Smith</h1>
+                </div>
+                      <div class="col-lg-12  text-center">
+                          <h2 class="text-light mx-auto mt-2 mb-5">Software Engineer & Mathematician</h2>
+                      </div>
+                  </div>
+              </div>
   </header>
 
+ <!-- <SCRIPT TYPE="text/javascript"> function popup(mylink, windowname) { if (! window.focus)return true; var href; if (typeof(mylink) == 'string') href=mylink; else href=mylink.href; window.open(href, windowname, 'width=400,height=200,scrollbars=yes'); return false; } </SCRIPT>
+     -->
 <!--Js scroll triggers here for about-->
   <section id="about" class="abs">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3">
-          <img src="img/2.jpg" height=200>
+        <div class="col-lg-3 h-50">
+          <img class="anime" src="img/skating.jpg" height=200>
         </div>
-        <div class="col-lg-8">
-          <h2 class="text-white mb-4 text-center">“It’s not who I am underneath, but what I do that defines me"</h2>
-          <p class="text-white">Thanks to my experience I've found a new passion in data science. With my background in Computer Science, Mathematics, and Business, I'm able to learn quickly, and continiously evolve into a learning machine.</p>
+        <div class="col-lg-8 h-50">
+          <h2 class="text-white mb-4 text-center anime">“It’s not who I am underneath, but what I do that defines me"</h2>
+          <p class="text-white anime" >Thanks to my experience I've found a new passion in data science. With my background in Computer Science, Mathematics and Business, I'm able to learn quickly, and continiously evolve into a learning machine.</p>
         
         </div>
-        
+          <div class="col-lg-12 text-center" style="padding-bottom:4%;">
+              <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="me.html">Tell Me More</a>
+          </div>
       </div>
-      <div class="col-md-4 center-block">
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="me.html">Tell Me More</a>
 
-      </div>
     </div>
   </section>
   <section id="exp" class="exps">
       <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Experience</h2>
-                <h3 class="section-subheading text-muted">Companies I've worked for</h3>
+                <h2 class="section-heading anime" style="padding-top: 3%">Experience</h2>
+               <h3 class="section-subheading text-muted anime">Places I've worked at</h3>
             </div>
-            <div class="col-lg-5 text-right" target="_blank">
-              <a href="https://trace3.com">
-            <img src="img/trace.png" height=100></a>
-          </div>
-          <div class="col-lg-5 text-center">
-            <a href="http://glaciericearena.net/" target="_blank">
-              <img src="img/logo.png" height=100>
-              </a>
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-lg-7 mx-auto">
+
+                        <!-- Timeline -->
+                        <ul class="timeline">
+                            <li class="timeline-item bg-white rounded ml-3 p-4 shadow anime">
+                                <div class="timeline-arrow"></div>
+                                <img src="img/cmu-logo.png" style="height:2cm">
+                                <h2 class="h5 mb-0">
+                                    Peer Tutor
+                                </h2>
+                                <span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Aug. 2016 - Present</span>
+                                <p class="text-small mt-2 font-weight-light">
+                                    <ul>
+                                        <li>
+                                            Provided exemplary tutoring services in computer science, mathematics, business and desktop support in the campus-based
+                                            tutoring facility
+                                        </li>
+                                        <li>
+                                            Promoted to tier 2 in August 2019 for displaying great tutoring success and training abilities
+                                        </li>
+                                    </ul>
+
+                                </p>
+                            </li>
+                            <li class="timeline-item bg-white rounded ml-3 p-4 shadow anime">
+                                <div class="timeline-arrow"></div>
+                                <img src="img/logo.png" height=50>
+                                <h2 class="h5 mb-0">Web Manager</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Oct. 2018 - Present</span>
+                                <p class="text-small mt-2 font-weight-light">
+                                    <ul>
+                                        <li>Designed and managed the website using a combination of tools including WordPress, HTML, and CSS driving increased sales and improved usability of the site</li>
+                                    </ul>
+                                </p>
+                            </li>
+                            <li class="timeline-item bg-white rounded ml-3 p-4 shadow anime">
+                                <div class="timeline-arrow"></div>
+                                <img src="img/dhi-logo.png" height=50>
+                                <h2 class="h5 mb-0">Technical Intern</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>May 2019 - Oct. 2019</span>
+                                <p class="text-small mt-2 font-weight-light">
+                                    <ul>
+                                        <li>Responsible for the creation, organization and management of documentation for the technology and product teams; guided and organized team members to ensure project deadlines were met and exceeded</li>
+                                        <li>Keyed in daily scrum activities for the Agile environment by extracting information and applying it to associated projects</li>
+                                        <li>Self-taught and utilized Javascript to create a mock-up for tracking company travel</li>
+                                    </ul>
+                                </p>
+                            </li>
+                            <li class="timeline-item bg-white rounded ml-3 p-4 shadow anime">
+                                <div class="timeline-arrow"></div>
+                                <img src="img/trace.png" height=50></a>
+                                <h2 class="h5 mb-0">Intern</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>May 2018- Aug. 2018</span>
+                                <p class="text-small mt-2 font-weight-light">
+                                    <ul>
+                                        <li>
+                                            Excelled in a 13-week internship with Trace3, a strategic technology partner, with a rotation through various technical functions
+                                            of the business including Data Intelligence, Emerging Architecture and Innovation
+                                        </li>
+                                        <li>Evaluated products from start-up tech companies to determine eligibility to present in front of a larger audience in Silicon Valley</li>
+                                        <li>Collaborated with a local telecommunications company to re-purpose networking equipment</li>
+                                    </ul>
+                                </p>
+                            </li>
+                        </ul><!-- End -->
+
+                    </div>
+                </div>
             </div>
-        </div>
-      </div>
+
   </section>
 
   <section id="proj" class="projects-section bg-light">
     <div class="container">
+            <div class="row">
+                    <div class="col-lg-12 text-center anime">
+                        <h2 class="section-heading" style="padding-top: 3%">Projects</h2>
+                        <h3 class="section-subheading text-muted">Personal and school projects</h3>
+                    </div>
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
           <img class="img-fluid" src="img/proj1.png" alt="">
@@ -119,7 +190,7 @@
               </div>
             </div>
           </div>
-          <a class="btn btn-primary btn-xl text-uppercase" href="projects.html">View More</a>
+          <a class="btn btn-primary btn-xl text-uppercase" href="portfolio.html" style="margin-top:2%; margin-bottom:3%;">View More</a>
         </div>
       </div>
   </section>
@@ -135,18 +206,111 @@
       </div>
     </div>
   </section>
-
-  <footer class="bg-light py-5">
-      <div class="container">
-        <div class="small text-center text-muted">:) Thanks for stopping by! Website is still a WIP - Student showcase has higher priority</div>
+  <section id="langcont" class="langcont">
+    <div class="container container-fluid">
+      <div class="row" style="padding-top: 4%">
+        <div class="col-lg-6 justify-content-left" style="padding-left: 8%">
+        <h4>Python</h4>
+          <div class="progress skill-bar" style="width: 80%">
+            <!--progress-bar-success-->
+            <div class="progress-bar" id="rainbow" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            </div>
+          </div>
+        </div>
+      <div class="col-lg-6">
+        <div class=" justify-content-left" style="padding-left:8%">
+        <h4>Javascript</h4>
+          <div class="progress skill-bar " style="width: 80%">
+              <!--progress-bar-success-->
+              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              </div>
+        </div>
       </div>
-  </footer>
+    </div>
+</div>
+    <div class="row" style="padding-top:1%">
+        <div class="col-lg-6 justify-content-left" style="padding-left: 8%">
+            <h4>HTML5 & CSS</h4>
+              <div class="progress skill-bar " style="width: 80%">
+                  <!--progress-bar-success-->
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+            </div>
+            </div>
+            <div class="col-lg-6">
+                <div class=" justify-content-left" style="padding-left:8%">
+                <h4>C++</h4>
+                  <div class="progress skill-bar " style="width: 80%">
+                      <!--progress-bar-success-->
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                      </div>
+                </div>
+                </div>
+    </div>
+    </div>
+    
+    <div class="row" style="padding-bottom:4%; padding-top:1%">
+        <div class="col-lg-6 justify-content-left" style="padding-left: 8%">
+            <h4>C#</h4>
+              <div class="progress skill-bar " style="width: 80%">
+                  <!--progress-bar-success-->
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+            </div>
+            </div>
+            <div class="col-lg-6">
+                <div class=" justify-content-left" style="padding-left:8%">
+                <h4>LaTex</h4>
+                  <div class="progress skill-bar " style="width: 80%">
+                      <!--progress-bar-success-->
+                      <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                      </div>
+                </div>
+              </div>
+    </div>
+    </div>
+    </div>
+  </section>
 
-<!-------------------End body-------------------->
-<script src="js/jquery/jquery.min.js"></script>
-<script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="js/jquery-easing/jquery.easing.min.js"></script>a
-<script src="js/agency.js"></script>
-
+    <footer class="bg-dark py-2">
+        <div class="container">
+            <div class="row" style="padding-top:1%">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#experience">Experience</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="portfolio.html">Photography</a></li>
+                                <li><a href="#about">About</a></li>
+                            </ul>
+                        </div>
+                    <br>
+                </div>
+              </div>
+                <div class="col-md-6">
+                    <h5 class="text-md-left">Contact Me</h5>
+                    <hr>
+   
+                    <form>
+                        <fieldset class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+                        </fieldset>
+                        <fieldset class="form-group text-xs-right">
+                            <button type="button" class="btn btn-secondary-outline btn-lg btn-light">Send</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+            <!-------------------End body-------------------->
+            <script src="js/jquery/jquery.min.js"></script>
+            <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="js/jquery-easing/jquery.easing.min.js"></script>
+            <script src="js/jupyter.js"></script>
 </body>
 </html> 
